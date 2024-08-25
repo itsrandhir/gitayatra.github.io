@@ -1,0 +1,40 @@
+p.chapter-para.dark-mode{
+    color: #fcf6bd;
+    text-align: justify;
+    margin-top: 25px;
+    font-size: 19px;
+    font-family: 'Vesper Libre', serif;
+}
+p.chapter-para{
+    color: #040404;
+    text-align: justify;
+    margin-top: 25px;
+    font-size: 19px;
+    font-family: 'Vesper Libre', serif;
+}
+.sort-opt{
+    position: relative;
+    right: 5px;
+    position: relative;
+    float: right;
+    bottom: 30px;
+    cursor: pointer;
+}
+.sort-opt.dark-mode{
+    color: #fcf6bd;
+    position: relative;
+    right: 5px;
+    position: relative;
+    float: right;
+    bottom: 30px;
+    cursor: pointer;
+}
+.verses-list.dark-mode{
+    background-color: #182142;
+    color: #fff;
+    font-size: 16.5px;
+    border: 0;
+}
+.verses-list.dark-mode:hover{
+    background-color: #151d3c;
+}

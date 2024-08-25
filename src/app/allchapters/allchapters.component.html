@@ -1,0 +1,26 @@
+<app-header></app-header>
+
+<section>
+    <div class="container dark-mode pt-3">
+        <div class="row p-3">
+            <div class="col-sm-12 mt-5 text-center">
+                <!-- <p>{{ chapters[1].name}}</p> -->
+                <h2 class="mega-title">Chapter</h2>
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="col-sm-12 mt-4 chapters-card" *ngFor="let chapter of chapters" routerLink="/chapter/{{chapter.id}}">
+                <h5 class="title-chapter">Chapter {{chapter.chapter_number}}</h5>
+                <h3 class="sub-title-chapter">{{chapter.name}}</h3>
+                <p class="chapter-para">
+                    {{ chapter.chapter_summary_hindi.length > 360 ? chapter.chapter_summary_hindi.substr(0,360) + "..." : chapter.chapter_summary_hindi}}
+                </p>
+                <p class="info-chapter"><span class="material-symbols-outlined">format_list_bulleted</span> <span class="versus_count">{{chapter.verses_count}}</span></p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<app-footer></app-footer>

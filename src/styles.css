@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Vesper+Libre&display=swap');
+:root {
+    --light-font: #fcf6bd;
+    --dark-bg: #040f1f;
+}
+.container-fluid.dark-mode, .container.dark-mode{
+    background-color: #040f1f !important;
+    background-size: 100%;
+    color: #fcf6bd !important;
+    min-height: 900px;
+}
+.mega-title{
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+.custom-page{
+    height: 1000px;
+}

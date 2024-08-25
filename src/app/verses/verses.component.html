@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<section>
+    <div class="container dark-mode pt-3">
+        <div class="row p-3">
+            <div class="col-sm-12 mt-5 text-center">
+                <h2 class="mega-title">|| {{versesDetail.chapter_number}}.{{versesDetail.verse_number}} ||</h2>
+                <p class="verses-title dark-mode">
+                    {{versesDetail.text}}
+                </p>
+            </div>
+            <div *ngFor="let trans of versesDetail.translations">
+                <div class="col-sm-12 mt-4 border-top pt-3" *ngIf="trans.language == 'hindi' && trans.author_name == 'Swami Ramsukhdas'">
+                    <h2 class="mega-title text-center">Transalation</h2>
+                    <p class="verse-trans dark-mode text-center" data-lng="hindi">
+                        {{ trans.description }}
+                    </p>
+                </div>
+            </div>
+            <div *ngFor="let trans of versesDetail.commentaries">
+                <div class="col-sm-12 mt-4 pt-3 mb-5 pb-2" *ngIf="trans.language == 'hindi' && trans.author_name == 'Swami Ramsukhdas'">    
+                    <h2 class="mega-title text-center">Commentries</h2>
+                    <p class="verses-comm dark-mode">
+                        {{ trans.description }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

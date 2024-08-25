@@ -1,0 +1,22 @@
+.header-nav.dark-mode{
+    background-color: #040f1f;
+    box-shadow: 0px 0px 10px 1px #000;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.header-nav{
+    background-color: lightgrey;
+    box-shadow: 0px 0px 10px 1px grey;
+    position: fixed;
+    top: 0;
+    margin:auto;
+    z-index: 1;
+    width: 100%;
+    justify-content: center;
+}
+.title{
+    font-weight: 600;
+    color: #fcf6bd;
+    text-align: center;
+}

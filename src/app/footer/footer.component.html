@@ -1,0 +1,11 @@
+<nav class="navbar fixed-bottom navbar-light footer-nav dark-mode">
+    <div class="container-fluid">
+      <a class="navbar-brand text-center" routerLink=""><span class="material-symbols-outlined footer-icon dark-mode">home</span> </a>
+      <a class="navbar-brand text-center" routerLink="/chapter"><span class="material-symbols-outlined footer-icon dark-mode">auto_stories</span> </a>
+      <a *ngIf="(isDarkmode == '0')" class="navbar-brand text-center" (click)="toggleLightMode()" href="javascript:void(0)"><span class="material-symbols-outlined toggle-dark-mode" [innerHTML]="darkOrLight"></span> </a> 
+      <a *ngIf="(isDarkmode == '1')" class="navbar-brand text-center" (click)="toggleLightMode()" href="javascript:void(0)"><span class="material-symbols-outlined toggle-dark-mode dark-mode" [innerHTML]="darkOrLight"></span> </a> 
+      <a class="navbar-brand text-center" routerLink="/nearby-temples"><span class="material-symbols-outlined footer-icon dark-mode">temple_hindu</span> </a> 
+      <a class="navbar-brand text-center" href="#"><span class="material-symbols-outlined footer-icon dark-mode">bookmark</span> </a> 
+      <!-- <a class="navbar-brand text-center" href="#"><span class="material-icons">bookmark</span> </a> -->
+    </div>
+</nav>

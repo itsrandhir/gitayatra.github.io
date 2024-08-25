@@ -1,0 +1,37 @@
+.title-chapter{
+    color: #ebd301;
+    font-weight: 600;
+    font-size: 20px;
+}
+.info-chapter{
+    color: #fcf6bd;
+    font-size: 20px;
+}
+.versus_count{
+    position: relative;
+    top: -5px;
+    left: 5px;
+}
+.sub-title-chapter{
+    color: #fff301;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 20px;
+}
+p.chapter-para{
+    color: #fcf6bd;
+    text-align: justify;
+    margin-top: 25px;
+    font-size: 18px;
+    font-family: 'Vesper Libre', serif;
+}
+.chapters-card{
+    border-radius: 10px;
+    background-color: #182142;
+    min-height: 280px;
+    padding: 30px 20px;
+    cursor: pointer;
+}
+.chapters-card:hover{
+    background-color: #151d3c;
+}

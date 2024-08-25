@@ -1,0 +1,41 @@
+<app-header></app-header>
+<section>
+    <div class="container dark-mode pt-3">
+        <div class="row p-3">
+            <div class="col-sm-12 mt-5 text-center">
+                <!-- <p>{{ chapters[1].name}}</p> -->
+                <h4 class="sub-title">Chapter {{chapterDetail.chapter_number}}</h4>
+                <h2 class="mega-title">{{chapterDetail.name}}</h2>
+                <p class="chapter-para dark-mode">
+                    {{chapterDetail.chapter_summary_hindi}}
+                </p>
+            </div>
+            <div class="col-sm-12 p-3 pb-0 border-top">
+                <h2 class="mega-title">{{chapterDetail.verses_count}} Verses</h2>
+                <span class="material-symbols-outlined sort-opt">swap_vert</span>
+            </div>
+        </div>
+        <div class="row mb-5 pb-5">
+            <div class="col-sm-12 mb-2 mt-2" *ngFor="let verses of allVerses">
+                <div class="list-group">
+                    <a routerLink="/chapter/{{verses.chapter_number}}/verses/{{verses.verse_number}}/" class="list-group-item verses-list dark-mode" aria-current="true">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h6>Verses {{verses.verse_number}}</h6>
+                        <!-- <span class="material-symbols-outlined">g_translate</span> -->
+                      </div>
+                        <div *ngFor="let trans of verses.translations">
+
+                            <p class="mb-1" *ngIf="trans.language == 'hindi' && trans.author_name == 'Swami Ramsukhdas'" data-lng="hindi">
+                                {{ trans.description }}
+                            </p>
+                            <p class="mb-1 d-none" *ngIf="trans.language == 'sanskrit'" data-lng="sanskrit" >
+                                {{ trans.description }}
+                            </p>
+                        </div>
+                    </a>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>
